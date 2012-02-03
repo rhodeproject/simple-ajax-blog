@@ -1,0 +1,3 @@
+$('#posts').prepend('<%= escape_javascript(render(@post)) %>');
+$('#posts > li').first().effect('highlight', {color: 'cyan', mode: 'show'}, 2000);
+$('#post_form > form')[0].reset();

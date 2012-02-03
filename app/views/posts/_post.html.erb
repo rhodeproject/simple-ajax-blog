@@ -1,0 +1,6 @@
+<%= content_tag_for(:li, post) do %>
+  <p class="title"><%= "#{post.title} - [#{post.email}]" %></p>
+  <p class="content"><%= post.content %></p>
+  <span class="age">Posted at <%= time_ago_in_words(post.created_at) %> ago.
+  (<%= link_to 'Delete', post, :confirm => 'Are you sure?', :method => :delete, :remote => true%>)</span>
+<% end %>

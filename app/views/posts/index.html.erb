@@ -1,0 +1,11 @@
+<h1>Posts</h1>
+<div id="timer">Rendered at: <%= Time.now %></div>
+
+<div id="post_form">
+  <%= render 'form' %>
+</div>
+
+<ul id="posts">
+  <%= render :partial => @posts.reverse %>
+</ul>
+

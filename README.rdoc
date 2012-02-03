@@ -1,0 +1,3 @@
+== Simple Ajax Blog using Rails and jQuery
+
+source code for example found at http://notes.rehali.com/?p=97
